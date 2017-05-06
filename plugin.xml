@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<!-- plugin.xml file written by Dynatrace Client 6.5.13 -->
+<plugin>
+  <extension point="com.dynatrace.diagnostics.pdk.pluginconfig" id="com.kang.wechat" name="Wechat Alert">
+    <information>
+      <category value="" />
+      <displayname value="Wechat Alert" />
+      <description value="Send violoated incident information to wechat" />
+      <supportlevel value="unsupported" />
+    </information>
+    <configuration>
+      <property key="url_for_token" label="url_for_token" type="string" description="url for get token" default="https://qyapi.weixin.qq.com/cgi-bin/gettoken" multiline="false" />
+      <property key="corpid" label="corpid" type="string" description="corpid for company" default="ww3c8872dabd4f9e07" multiline="false" />
+      <property key="corpsecret" label="corpsecret" type="string" description="corpsecret for company" default="dWLJP9S3ix5-j1gUAT8eRTjLudVF7fFUCxi5MMcjVns" multiline="false" />
+      <property key="touser" label="touser" type="string" description="Who will receive the message" default="XueKang" multiline="false" />
+      <property key="toparty" label="toparty" type="string" description="Which party will get message" default="KK" multiline="false" />
+      <property key="msgtype" label="msgtype" type="string" description="Message type" default="text" multiline="false" />
+      <property key="agentid" label="agentid" type="string" description="My property description ..." default="1000002" multiline="false" />
+      <property key="safe" label="safe" type="string" description="safe type" default="0" multiline="false" />
+      <property key="url" label="url" type="string" description="url for send wechat msg to" default="https://qyapi.weixin.qq.com/cgi-bin/message/send" multiline="false" />
+    </configuration>
+  </extension>
+  <extension point="com.dynatrace.diagnostics.pdk.action" id="com.kang.wechat.action" name="Wechat Alert">
+    <plugin configid="com.kang.wechat" class="com.kang.wechat.WechatPlugin" />
+  </extension>
+</plugin>
