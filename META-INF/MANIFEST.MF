@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: com.kang.wechat;singleton:=true
+Bundle-Name: Wechat Alert
+Bundle-Version: 1.0.0
+Bundle-ClassPath: .,lib/commons-codec-1.9.jar,lib/commons-logging-1.2.
+ jar,lib/fluent-hc-4.5.3.jar,lib/httpclient-4.5.3.jar,lib/httpclient-c
+ ache-4.5.3.jar,lib/httpclient-win-4.5.3.jar,lib/httpcore-4.4.6.jar,li
+ b/httpmime-4.5.3.jar,lib/jna-4.1.0.jar,lib/jna-platform-4.1.0.jar,lib
+ /json-20160810.jar
+Require-Bundle: com.dynatrace.diagnostics.sdk
+Bundle-ManifestVersion: 2
+Bundle-Vendor: kang
+
